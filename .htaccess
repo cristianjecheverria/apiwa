@@ -1,6 +1,0 @@
-<IfModule mod_rewrite.c> 
-    RewriteEngine On 
-    RewriteCond %{HTTPS} !=on 
-    RewriteCond %{SERVER_PORT} !^8000$ 
-    RewriteRule ^ http://%{HTTP_HOST}:8000%{REQUEST_URI} [P,QSA,L] 
-</ SiMódulo>
